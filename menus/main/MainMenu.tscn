@@ -42,8 +42,8 @@ margin_top = 72.9394
 margin_right = -362.46
 margin_bottom = 100.939
 rect_scale = Vector2( 5.17452, 3.71084 )
-custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.0352941, 0.0431373, 0.0392157, 1 )
+custom_fonts/font = SubResource( 1 )
 text = "Sufficiency Economy Farm Game"
 
 [node name="background" type="Sprite" parent="."]
@@ -140,6 +140,7 @@ margin_right = 0.0
 
 [node name="Dialogue" parent="." instance=ExtResource( 9 )]
 visible = false
+
 [connection signal="pressed" from="Buttons/New Game" to="." method="_on_New_Game_pressed"]
 [connection signal="pressed" from="Buttons/Load Game" to="." method="_on_Load_Game_pressed"]
 [connection signal="pressed" from="Buttons/Controls" to="." method="_on_Controls_pressed"]
