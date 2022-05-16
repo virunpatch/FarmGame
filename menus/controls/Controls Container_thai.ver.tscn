@@ -1,0 +1,485 @@
+[gd_scene load_steps=33 format=2]
+
+[ext_resource path="res://Font/RD CHULAJARUEK.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://menus/controls/keys/Up.png" type="Texture" id=2]
+[ext_resource path="res://menus/controls/keys/Left.png" type="Texture" id=3]
+[ext_resource path="res://menus/controls/keys/Down.png" type="Texture" id=4]
+[ext_resource path="res://menus/controls/keys/Right.png" type="Texture" id=5]
+[ext_resource path="res://menus/controls/keys/W.png" type="Texture" id=6]
+[ext_resource path="res://menus/controls/keys/A.png" type="Texture" id=7]
+[ext_resource path="res://menus/controls/keys/S.png" type="Texture" id=8]
+[ext_resource path="res://menus/controls/keys/D.png" type="Texture" id=9]
+[ext_resource path="res://menus/controls/keys/Enter.png" type="Texture" id=10]
+[ext_resource path="res://menus/controls/keys/Space.png" type="Texture" id=11]
+[ext_resource path="res://menus/controls/keys/Q.png" type="Texture" id=12]
+[ext_resource path="res://menus/controls/keys/B.png" type="Texture" id=13]
+[ext_resource path="res://menus/controls/keys/E.png" type="Texture" id=14]
+[ext_resource path="res://menus/controls/keys/Tab.png" type="Texture" id=15]
+[ext_resource path="res://menus/controls/keys/Escape.png" type="Texture" id=16]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=8]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=9]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=10]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=11]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=12]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=13]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=14]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=15]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=16]
+font_data = ExtResource( 1 )
+
+[node name="Controls Container" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -314.41
+margin_top = -289.835
+margin_right = 213.59
+margin_bottom = 146.165
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -240.477
+margin_top = -220.881
+margin_right = 154.523
+margin_bottom = 169.119
+color = Color( 0.203922, 0.188235, 0.2, 1 )
+
+[node name="Container" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -233.159
+margin_top = -217.847
+margin_right = 323.841
+margin_bottom = 306.153
+rect_scale = Vector2( 0.71504, 0.723992 )
+custom_constants/separation = 10
+
+[node name="Title" type="Label" parent="Container"]
+margin_right = 557.0
+margin_bottom = 28.0
+custom_fonts/font = SubResource( 1 )
+text = "แผงควบคุม"
+align = 1
+
+[node name="Controls" type="HBoxContainer" parent="Container"]
+editor/display_folded = true
+margin_top = 38.0
+margin_right = 557.0
+margin_bottom = 524.0
+custom_constants/separation = 12
+
+[node name="Left Box" type="MarginContainer" parent="Container/Controls"]
+editor/display_folded = true
+margin_right = 256.0
+margin_bottom = 486.0
+custom_constants/margin_top = 8
+custom_constants/margin_left = 0
+
+[node name="Description" type="VBoxContainer" parent="Container/Controls/Left Box"]
+margin_top = 8.0
+margin_right = 256.0
+margin_bottom = 486.0
+custom_constants/separation = 22
+
+[node name="Move" type="Label" parent="Container/Controls/Left Box/Description"]
+margin_right = 256.0
+margin_bottom = 28.0
+rect_pivot_offset = Vector2( -65.8062, 304.541 )
+custom_fonts/font = SubResource( 2 )
+text = "การเคลื่อนที่"
+
+[node name="Change Facing Direction" type="Label" parent="Container/Controls/Left Box/Description"]
+margin_top = 50.0
+margin_right = 256.0
+margin_bottom = 78.0
+rect_pivot_offset = Vector2( -65.8062, 304.541 )
+custom_fonts/font = SubResource( 3 )
+text = "เปลี่ยนทิศทางหันหน้า"
+
+[node name="Action" type="Label" parent="Container/Controls/Left Box/Description"]
+visible = false
+margin_top = 100.0
+margin_right = 248.0
+margin_bottom = 128.0
+rect_pivot_offset = Vector2( -65.8062, 304.541 )
+custom_fonts/font = SubResource( 4 )
+text = "Action"
+
+[node name="Super Action" type="Label" parent="Container/Controls/Left Box/Description"]
+margin_top = 100.0
+margin_right = 256.0
+margin_bottom = 128.0
+rect_pivot_offset = Vector2( -65.8062, 304.541 )
+custom_fonts/font = SubResource( 5 )
+text = "ซูเปอร์แอคชั่น (กดค้างไว้เพื่อใช้)"
+
+[node name="Pickup or Drop" type="Label" parent="Container/Controls/Left Box/Description"]
+margin_top = 150.0
+margin_right = 256.0
+margin_bottom = 178.0
+rect_pivot_offset = Vector2( -65.8062, 304.541 )
+custom_fonts/font = SubResource( 6 )
+text = "หยิบ/วาง สิ่งของ"
+
+[node name="Store" type="Label" parent="Container/Controls/Left Box/Description"]
+margin_top = 200.0
+margin_right = 256.0
+margin_bottom = 228.0
+rect_pivot_offset = Vector2( -65.8062, 304.541 )
+custom_fonts/font = SubResource( 7 )
+text = "เก็บของใส่กระเป๋า"
+
+[node name="Sleep" type="Label" parent="Container/Controls/Left Box/Description"]
+margin_top = 250.0
+margin_right = 256.0
+margin_bottom = 278.0
+rect_pivot_offset = Vector2( -65.8062, 304.541 )
+custom_fonts/font = SubResource( 8 )
+text = "นอน (ต้องนอนข้างเตียง)"
+
+[node name="Inventory" type="Label" parent="Container/Controls/Left Box/Description"]
+margin_top = 300.0
+margin_right = 256.0
+margin_bottom = 328.0
+rect_pivot_offset = Vector2( -65.8062, 304.541 )
+custom_fonts/font = SubResource( 9 )
+text = "เปิด/ปิด ช่องเก็บของ"
+
+[node name="Equip" type="Label" parent="Container/Controls/Left Box/Description"]
+margin_top = 350.0
+margin_right = 256.0
+margin_bottom = 378.0
+custom_fonts/font = SubResource( 10 )
+text = "สวมใส่อุปกรณ์ (ในขณะที่อยู่ในช่องเก็บของ)"
+
+[node name="Swap" type="Label" parent="Container/Controls/Left Box/Description"]
+margin_top = 400.0
+margin_right = 256.0
+margin_bottom = 428.0
+custom_fonts/font = SubResource( 11 )
+text = "สลับสิ่งของ (ในขณะที่อยู่ในช่องเก็บของ)"
+
+[node name="Pause" type="Label" parent="Container/Controls/Left Box/Description"]
+margin_top = 450.0
+margin_right = 256.0
+margin_bottom = 478.0
+rect_pivot_offset = Vector2( -65.8062, 304.541 )
+custom_fonts/font = SubResource( 12 )
+text = "หยุดเกมชั่วคราว"
+
+[node name="Right Box" type="MarginContainer" parent="Container/Controls"]
+editor/display_folded = true
+visible = false
+margin_left = 268.0
+margin_right = 557.0
+margin_bottom = 486.0
+
+[node name="Images" type="VBoxContainer" parent="Container/Controls/Right Box"]
+editor/display_folded = true
+margin_right = 289.0
+margin_bottom = 486.0
+custom_constants/separation = 4
+
+[node name="Move" type="HBoxContainer" parent="Container/Controls/Right Box/Images"]
+margin_right = 289.0
+margin_bottom = 32.0
+
+[node name="Up" type="TextureRect" parent="Container/Controls/Right Box/Images/Move"]
+margin_right = 32.0
+margin_bottom = 32.0
+texture = ExtResource( 2 )
+
+[node name="Left" type="TextureRect" parent="Container/Controls/Right Box/Images/Move"]
+margin_left = 36.0
+margin_right = 68.0
+margin_bottom = 32.0
+texture = ExtResource( 3 )
+
+[node name="Down" type="TextureRect" parent="Container/Controls/Right Box/Images/Move"]
+margin_left = 72.0
+margin_right = 104.0
+margin_bottom = 32.0
+texture = ExtResource( 4 )
+
+[node name="Right" type="TextureRect" parent="Container/Controls/Right Box/Images/Move"]
+margin_left = 108.0
+margin_right = 140.0
+margin_bottom = 32.0
+texture = ExtResource( 5 )
+
+[node name="Face Direction" type="HBoxContainer" parent="Container/Controls/Right Box/Images"]
+margin_top = 36.0
+margin_right = 289.0
+margin_bottom = 68.0
+
+[node name="W" type="TextureRect" parent="Container/Controls/Right Box/Images/Face Direction"]
+margin_right = 32.0
+margin_bottom = 32.0
+texture = ExtResource( 6 )
+
+[node name="A" type="TextureRect" parent="Container/Controls/Right Box/Images/Face Direction"]
+margin_left = 36.0
+margin_right = 68.0
+margin_bottom = 32.0
+texture = ExtResource( 7 )
+
+[node name="S" type="TextureRect" parent="Container/Controls/Right Box/Images/Face Direction"]
+margin_left = 72.0
+margin_right = 104.0
+margin_bottom = 32.0
+texture = ExtResource( 8 )
+
+[node name="D" type="TextureRect" parent="Container/Controls/Right Box/Images/Face Direction"]
+margin_left = 108.0
+margin_right = 140.0
+margin_bottom = 32.0
+texture = ExtResource( 9 )
+
+[node name="Action" type="HBoxContainer" parent="Container/Controls/Right Box/Images"]
+editor/display_folded = true
+margin_top = 72.0
+margin_right = 289.0
+margin_bottom = 104.0
+
+[node name="Enter" type="TextureRect" parent="Container/Controls/Right Box/Images/Action"]
+margin_right = 84.0
+margin_bottom = 32.0
+texture = ExtResource( 10 )
+
+[node name="Space" type="TextureRect" parent="Container/Controls/Right Box/Images/Action"]
+margin_left = 88.0
+margin_right = 248.0
+margin_bottom = 32.0
+texture = ExtResource( 11 )
+
+[node name="Super Action" type="HBoxContainer" parent="Container/Controls/Right Box/Images"]
+margin_top = 108.0
+margin_right = 289.0
+margin_bottom = 140.0
+
+[node name="Enter" type="TextureRect" parent="Container/Controls/Right Box/Images/Super Action"]
+margin_right = 84.0
+margin_bottom = 32.0
+texture = ExtResource( 10 )
+
+[node name="Space" type="TextureRect" parent="Container/Controls/Right Box/Images/Super Action"]
+margin_left = 88.0
+margin_right = 248.0
+margin_bottom = 32.0
+texture = ExtResource( 11 )
+
+[node name="Q" type="TextureRect" parent="Container/Controls/Right Box/Images"]
+margin_top = 144.0
+margin_right = 289.0
+margin_bottom = 176.0
+texture = ExtResource( 12 )
+
+[node name="B" type="TextureRect" parent="Container/Controls/Right Box/Images"]
+margin_top = 180.0
+margin_right = 289.0
+margin_bottom = 212.0
+texture = ExtResource( 13 )
+
+[node name="E" type="TextureRect" parent="Container/Controls/Right Box/Images"]
+margin_top = 216.0
+margin_right = 289.0
+margin_bottom = 248.0
+texture = ExtResource( 14 )
+
+[node name="Tab" type="TextureRect" parent="Container/Controls/Right Box/Images"]
+margin_top = 252.0
+margin_right = 289.0
+margin_bottom = 284.0
+texture = ExtResource( 15 )
+
+[node name="Equip" type="HBoxContainer" parent="Container/Controls/Right Box/Images"]
+margin_top = 288.0
+margin_right = 289.0
+margin_bottom = 320.0
+
+[node name="E" type="TextureRect" parent="Container/Controls/Right Box/Images/Equip"]
+margin_right = 32.0
+margin_bottom = 32.0
+texture = ExtResource( 14 )
+
+[node name="Right Click" type="Label" parent="Container/Controls/Right Box/Images/Equip"]
+margin_left = 36.0
+margin_top = 2.0
+margin_right = 108.0
+margin_bottom = 30.0
+custom_fonts/font = SubResource( 13 )
+text = "หรือคลิกขวา"
+
+[node name="Swap" type="HBoxContainer" parent="Container/Controls/Right Box/Images"]
+margin_top = 324.0
+margin_right = 289.0
+margin_bottom = 356.0
+
+[node name="S" type="TextureRect" parent="Container/Controls/Right Box/Images/Swap"]
+margin_right = 32.0
+margin_bottom = 32.0
+texture = ExtResource( 8 )
+
+[node name="Drag and Drop and Right Click" type="Label" parent="Container/Controls/Right Box/Images/Swap"]
+margin_left = 36.0
+margin_right = 289.0
+margin_bottom = 28.0
+rect_min_size = Vector2( 253, 28 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_fonts/font = SubResource( 14 )
+text = "หรือลากและวางด้วยการคลิกซ้าย"
+autowrap = true
+
+[node name="Esc" type="TextureRect" parent="Container/Controls/Right Box/Images"]
+margin_top = 360.0
+margin_right = 289.0
+margin_bottom = 392.0
+texture = ExtResource( 16 )
+
+[node name="Down" type="Sprite" parent="."]
+position = Vector2( 270.821, 42.9232 )
+scale = Vector2( 0.691364, 0.691364 )
+texture = ExtResource( 4 )
+
+[node name="A" type="Sprite" parent="."]
+position = Vector2( 269.221, 77.3187 )
+scale = Vector2( 0.729818, 0.729818 )
+texture = ExtResource( 7 )
+
+[node name="B" type="Sprite" parent="."]
+position = Vector2( 241.856, 189.538 )
+scale = Vector2( 0.756161, 0.756161 )
+texture = ExtResource( 13 )
+
+[node name="E" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 239.853, 298.173 )
+scale = Vector2( 0.740921, 0.740921 )
+texture = ExtResource( 14 )
+
+[node name="Right Click" type="Label" parent="E"]
+margin_left = 22.8514
+margin_top = -16.6567
+margin_right = 94.8514
+margin_bottom = 11.3433
+custom_fonts/font = SubResource( 15 )
+text = "หรือคลิกขวา"
+
+[node name="Enter" type="Sprite" parent="."]
+position = Vector2( 259.29, 115.453 )
+scale = Vector2( 0.727288, 0.727288 )
+texture = ExtResource( 10 )
+
+[node name="Escape" type="Sprite" parent="."]
+position = Vector2( 240.716, 365.679 )
+scale = Vector2( 0.702168, 0.65253 )
+texture = ExtResource( 16 )
+
+[node name="Left" type="Sprite" parent="."]
+position = Vector2( 241.742, 43.735 )
+scale = Vector2( 0.683659, 0.683659 )
+texture = ExtResource( 3 )
+
+[node name="Q" type="Sprite" parent="."]
+position = Vector2( 241.951, 153.423 )
+scale = Vector2( 0.756163, 0.756163 )
+texture = ExtResource( 12 )
+
+[node name="Right" type="Sprite" parent="."]
+position = Vector2( 324.471, 42.1047 )
+scale = Vector2( 0.656153, 0.656153 )
+texture = ExtResource( 5 )
+
+[node name="S" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 238.719, 334.037 )
+scale = Vector2( 0.676466, 0.676466 )
+texture = ExtResource( 8 )
+
+[node name="Drag and Drop and Right Click" type="Label" parent="S"]
+margin_left = 21.7477
+margin_top = -14.2722
+margin_right = 213.748
+margin_bottom = 13.7278
+custom_fonts/font = SubResource( 16 )
+text = "หรือลากและวางด้วยการคลิกซ้าย"
+
+[node name="Tab" type="Sprite" parent="."]
+position = Vector2( 250.372, 261.731 )
+scale = Vector2( 0.738674, 0.738674 )
+texture = ExtResource( 15 )
+
+[node name="Up" type="Sprite" parent="."]
+position = Vector2( 298.397, 43.1047 )
+scale = Vector2( 0.656151, 0.656151 )
+texture = ExtResource( 2 )
+
+[node name="W" type="Sprite" parent="."]
+position = Vector2( 242.282, 77.5853 )
+scale = Vector2( 0.72982, 0.72982 )
+texture = ExtResource( 6 )
+
+[node name="D" type="Sprite" parent="."]
+position = Vector2( 323.86, 77.2226 )
+scale = Vector2( 0.729821, 0.729821 )
+texture = ExtResource( 9 )
+
+[node name="Space" type="Sprite" parent="."]
+position = Vector2( 349.883, 115.342 )
+scale = Vector2( 0.711245, 0.711245 )
+texture = ExtResource( 11 )
+
+[node name="E2" type="Sprite" parent="."]
+position = Vector2( 241.382, 225.687 )
+scale = Vector2( 0.727287, 0.727287 )
+texture = ExtResource( 14 )
+
+[node name="S2" type="Sprite" parent="."]
+position = Vector2( 296.081, 77.092 )
+scale = Vector2( 0.714762, 0.701008 )
+texture = ExtResource( 8 )

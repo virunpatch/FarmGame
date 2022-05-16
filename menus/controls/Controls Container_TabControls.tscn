@@ -1,0 +1,206 @@
+<<<<<<< HEAD
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Font/RD CHULAJARUEK.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://menus/controls/Controls Container_thai.ver.tscn" type="PackedScene" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 1 )
+=======
+[gd_scene format=2]
+>>>>>>> 63f00bbc905d9420da06c46329207c8808ee6613
+
+[node name="Controls Container" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -314.41
+margin_top = -289.835
+margin_right = 213.59
+margin_bottom = 146.165
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -240.477
+margin_top = -220.066
+margin_right = 154.523
+margin_bottom = 169.933
+color = Color( 0.203922, 0.188235, 0.2, 1 )
+
+<<<<<<< HEAD
+[node name="Container" type="VBoxContainer" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -233.159
+margin_top = -217.847
+margin_right = 323.841
+margin_bottom = 306.153
+rect_scale = Vector2( 0.71504, 0.723992 )
+custom_constants/separation = 10
+
+[node name="Title" type="Label" parent="Container"]
+margin_right = 557.0
+margin_bottom = 28.0
+custom_fonts/font = SubResource( 1 )
+text = "แผงควบคุม"
+align = 1
+
+[node name="TabContainer" type="TabContainer" parent="."]
+margin_left = 25.0
+margin_top = 2.0
+margin_right = 417.0
+margin_bottom = 383.0
+
+[node name="Controls Key" type="Tabs" parent="TabContainer"]
+visible = false
+=======
+[node name="TabContainer" type="TabContainer" parent="."]
+margin_left = 2.0
+margin_top = 4.0
+margin_right = 526.0
+margin_bottom = 433.0
+
+[node name="Tabs" type="Tabs" parent="TabContainer"]
+>>>>>>> 63f00bbc905d9420da06c46329207c8808ee6613
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+<<<<<<< HEAD
+[node name="Controls Container" parent="TabContainer/Controls Key" instance=ExtResource( 2 )]
+margin_left = -211.755
+margin_top = -174.61
+margin_right = 316.245
+margin_bottom = 261.39
+rect_scale = Vector2( 0.967049, 0.900148 )
+
+[node name="Chapter 1" type="Tabs" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+custom_fonts/font = SubResource( 2 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Chapter 1"]
+margin_left = 0.663391
+margin_top = -1.32684
+margin_right = 385.663
+margin_bottom = 341.673
+custom_fonts/normal_font = SubResource( 3 )
+text = "[ เศรษฐกิจพอเพียง ] เป็นปรัชญาที่พระบาทสมเด็จพระเจ้าอยู่หัวพระราชทานพระราชดำริชี้แนะแนวทางการดำเนินชีวิตแก่พสกนิกรชาวไทยมาโดยตลอดนานกว่า ๒๕ ปี ตั้งแต่ก่อนเกิดวิกฤตการณ์ทางเศรษฐกิจ และเมื่อภายหลังได้ทรงเน้นย้ำแนวทางการแก้ไขเพื่อให้รอดพ้น และสามารถดำรงอยู่ได้อย่างมั่นคงและยั่งยืนภายใต้กระแส
+โลกาภิวัตน์และความเปลี่ยนแปลงต่างๆ
+
+[ ความหมายของเศรษฐกิจพอเพียง ]
+๑. ความพอประมาณ หมายถึง ความพอดีที่ไม่น้อยเกินไปและไม่มากเกินไป โดยไม่เบียดเบียนตนเองและผู้อื่น เช่น การผลิตและการบริโภคที่อยู่ในระดับพอประมาณ 
+๒. ความมีเหตุผล หมายถึง การตัดสินใจเกี่ยวกับระดับความพอเพียงนั้น จะต้องเป็นไปอย่างมีเหตุผล โดยพิจารณาจากเหตุปัจจัยที่เกี่ยวข้อง ตลอดจนคำนึงถึงผลที่คาดว่าจะเกิดขึ้นจากการกระทำนั้นๆ อย่างรอบคอบ 
+๓. ภูมิคุ้มกัน หมายถึง การเตรียมตัวให้พร้อมรับผลกระทบและการเปลี่ยนแปลงด้านต่างๆ ที่จะเกิดขึ้น โดยคำนึงถึงความเป็นไปได้ของสถานการณ์ต่างๆ ที่คาดว่าจะเกิดขึ้นในอนาคต
+โดยมี เงื่อนไข ของการตัดสินใจและดำเนินกิจกรรมต่างๆ ให้อยู่ในระดับพอเพียง ๒ ประการ 
+๑. เงื่อนไขความรู้ ประกอบด้วย ความรอบรู้เกี่ยวกับวิชาการต่างๆ ที่เกี่ยวข้องรอบด้าน ความรอบคอบที่จะนำความรู้เหล่านั้นมาพิจารณาให้เชื่อมโยงกัน เพื่อประกอบการวางแผนและความระมัดระวังในการปฏิบัติ 
+๒. เงื่อนไขคุณธรรม ที่จะต้องเสริมสร้าง ประกอบด้วย มีความตระหนักใน คุณธรรม มีความซื่อสัตย์สุจริตและมีความอดทน มีความเพียร ใช้สติปัญญาในการดำเนินชีวิต"
+
+[node name="Chapter 2" type="Tabs" parent="TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Chapter 2"]
+margin_right = 385.0
+margin_bottom = 345.0
+custom_fonts/normal_font = SubResource( 4 )
+text = "[ การแบ่งพื้นที่ในสวนให้เหมาะสมและคุ้มค่า ]  
+เกษตรกรต้องสำรวจพื้นที่ในสวนด้วยการตรวจสภาพดิน ทิศทางแสงแดด และลม จากนั้นก็เริ่มแบ่งพื้นที่ในสวนตามเกษตรทฤษฎีใหม่จากสูตร 30:30:30:10 ซึ่งใช้หลักแนวทางการทำการเกษตรผสมผสาน ให้ง่ายและเหมาะสมกับพื้นที่ของเราเอง โดยปรับเป็นโซนแปลงผักสวนครัว โซนสมุนไพร โรงเรือนเห็ด ฟาร์มสัตว์เล็ก ๆ เช่น เล้าไก่หรือฟาร์มไส้เดือนไซส์ขนาดเล็ก  และบ่อน้ำหลัก 
+แต่ถ้าหากพื้นที่คับแคบเกินไปก็ไม่จำเป็นจะต้องแบ่ง
+ตามนี้ทุกประการเลือกเฉพาะโซนที่เหมาะสมกับบ้านเราเท่านั้นก็ได้ 
+
+[ ข้อดีของการทำการเกษตรผสมผสาน ]
+๑. ช่วยให้เกิดความมั่นคงด้านรายได้ต่อเกษตรกรและครอบครัว
+๒. ช่วยลดการพึ่งพาด้านเงินทุน ปัจจัยการผลิต และอาหารจากภายนอก
+๓. ช่วยให้เกิดการประหยัด ค่าใช้จ่ายในไร่นาลดลง มีรายได้สุทธิเพิ่มมากขึ้น
+๔. ช่วยเพิ่มรายได้จากพื้นที่เกษตรขนาดย่อยที่จำกัด
+๕. ช่วยเพิ่มพูนความอุดมสมบูรณ์ของทรัพยากรธรรมชาติ ลดการทำลายสิ่งแวดล้อม
+
+การจัดการพื้นที่แบ่งได้เป็น 4 ส่วน คือ 30:30:30:10  นั้นคือ 
+
+[ ขุดสระเก็บกักน้ำ  ]
+ พื้นที่ประมาณ 30% ให้ขุดสระเก็บกักน้ำ เพื่อให้มีน้ำใช้ สม่ำเสมอตลอดปี โดยเก็บกักน้ำฝนในฤดูฝน และใช้เสริมการปลูกพืชในฤดูแล้ง หรือระยะฝนทิ้งช่วง
+ตลอดจนการเลี้ยงสัตว์ และพืชน้ำต่างๆ เช่น ผักบุ้ง ผักกระเฉด โสน ฯลฯ
+
+[ ปลูกข้้าว ]
+พื้นที่ประมาณ 30 % ให้ปลูกข้าวในฤดูฝน เพื่อใช้เป็นอาหารประจำวันสำหรับครัวเรือนให้เพียงพอตลอดปี 
+โดยไม่ต้องซื้อหาในราคาแพง เป็นการลดค่าใช้จ่าย และสามารพึ่งตนเองได้
+
+[ ปลูกผลไม้ ไม้ยืนต้น พืชไร่ พืชผัก ]
+พื้นที่ประมาณ 30 % ให้ปลูกไม้ผล ไม้ยืนต้น พืชไร่ พืชผัก พืชสมุนไพร ฯลฯ อย่างผสมผสานกัน และหลากหลายในพื้นที่เดียวกัน 
+เพื่อใช้เป็นอาหารประจำวัน หากเหลือจากการบริโภคก็นำไปขายได้
+
+[ เป็นที่อยู่อาศัย และอื่นๆ ]
+พื้นที่ประมาณ 10 % ใช้เป็นที่อยู่อาศัย เลี้ยงสัตว์ ถนนหนทาง คันดิน โรงเรือนและสิ่งก่อสร้างอื่นๆ 
+รวมทั้งคอกเลี้ยงสัตว์ เรือนเพาะชำ ฉางเก็บผลิตผลการเกษตร ฯลฯ นี่เป็นทฤษฎีปฏิบัติจริง พื้นที่เป็นนาทั้งหมดหรือไร่สวนด้วย"
+
+[node name="Chapter 3 " type="Tabs" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Chapter 3 "]
+margin_right = 384.0
+margin_bottom = 99.0
+custom_fonts/normal_font = SubResource( 5 )
+text = "อยู่ระหว่างการพัฒนา"
+=======
+[node name="RichTextLabel" type="RichTextLabel" parent="TabContainer/Tabs"]
+margin_right = 517.0
+margin_bottom = 397.0
+text = "Russia's political plans in Ukraine have failed - UK MoD
+The fact that Russia has only succeeded in imposing a pro-Russian leadership in one Ukrainian city - Kherson - highlights the failure of Russia's invasion to make progress in terms of its political objectives in Ukraine, according to the UK's Ministry of Defence.
+
+In its latest update, it says that the Russian-imposed military-civilian administration in Kherson has announced it will ask for the region to be included into Russia through holding a referendum.
+
+It says that if such a referendum is carried out, Russia will \"almost certainly manipulate the results to show a clear majority in favour of leaving Ukraine\".
+
+However, the fact that Russia has only succeeded in imposing a pro-Russian local leadership in one Ukrainian city, it adds, highlights the failures of its original plan to place \"the majority of Ukraine's regions under long-term pro-Russian authority\".Russia's political plans in Ukraine have failed - UK MoD
+The fact that Russia has only succeeded in imposing a pro-Russian leadership in one Ukrainian city - Kherson - highlights the failure of Russia's invasion to make progress in terms of its political objectives in Ukraine, according to the UK's Ministry of Defence.
+
+In its latest update, it says that the Russian-imposed military-civilian administration in Kherson has announced it will ask for the region to be included into Russia through holding a referendum.
+
+It says that if such a referendum is carried out, Russia will \"almost certainly manipulate the results to show a clear majority in favour of leaving Ukraine\".
+
+However, the fact that Russia has only succeeded in imposing a pro-Russian local leadership in one Ukrainian city, it adds, highlights the failures of its original plan to place \"the majority of Ukraine's regions under long-term pro-Russian authority\"."
+
+[node name="Tabs2" type="Tabs" parent="TabContainer"]
+visible = false
+margin_right = 40.0
+margin_bottom = 24.0
+>>>>>>> 63f00bbc905d9420da06c46329207c8808ee6613
